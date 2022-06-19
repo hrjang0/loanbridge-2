@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="explore">
+            <div class="cont">
+                <div class="wrap">
+                    <div class="head">
+                        <div class="total">총 4 건</div>
+                        <div class="button">
+                            <a href="./addnewdeal.html"><img src="../resources/img/icon_plus_white.png"><p>Add new deal</p></a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <div class="inner">
+                                    <div class="desc">
+                                        <div class="title">
+                                            <div class="tit">삼성전자 운영자금-3000억(KRW), 10million(USD)</div>
+                                            <div class="txt">Launch 0000.00.00 ~ Deal close 0000.00.00</div>
+                                        </div>
+                                        <div class="status">
+                                            <span class="status01">In progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="invite"><a href="#"><img src="../resources/img/icon_clip.png"><p>invitation letter</p></a></div>
+                                        <div class="join"><button type="button" class="btn modalOpen" data-modal="modal-participate">Participate</button></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <div class="desc">
+                                        <div class="title">
+                                            <div class="tit">오성전자 운영자금-3000억(KRW)</div>
+                                            <div class="txt">Launch 0000.00.00 ~ Deal close 0000.00.00</div>
+                                        </div>
+                                        <div class="status">
+                                            <span class="status01">In progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="invite"><a href="#"><img src="../resources/img/icon_clip.png"><p>invitation letter</p></a></div>
+                                        <div class="join"><button type="button" class="btn modalOpen" data-modal="modal-participate">Participate</button></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <div class="desc">
+                                        <div class="title">
+                                            <div class="tit">삼성전자 운영자금-3000억(KRW), 10million(USD)</div>
+                                            <div class="txt">Launch 0000.00.00 ~ Deal close 0000.00.00</div>
+                                        </div>
+                                        <div class="status">
+                                            <span class="status01">In progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="invite"><a href="#"><img src="../resources/img/icon_clip.png"><p>invitation letter</p></a></div>
+                                        <div class="join"><button type="button" class="btn modalOpen" data-modal="modal-participate">Participate</button></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inner">
+                                    <div class="desc">
+                                        <div class="title">
+                                            <div class="tit">삼성전자 운영자금-3000억(KRW), 10million(USD)</div>
+                                            <div class="txt">Launch 0000.00.00 ~ Deal close 0000.00.00</div>
+                                        </div>
+                                        <div class="status">
+                                            <span class="status03">allocation</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="invite"><a href="#"><img src="../resources/img/icon_clip.png"><p>invitation letter</p></a></div>
+                                        <div class="join"><button type="button" class="btn disabled modalOpen" data-modal="modal-participate">Participate</button></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-container" id="modal-participate">
+        <div class="modal-wrapper">
+            <div class="title">Participate deal</div>
+            <div class="text">{dealName}에 참여하시겠습니까?</div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

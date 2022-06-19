@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="dealdetail">
+            <div class="wrap">
+                <div class="content">
+                    <div class="title">
+                        <div class="tit">삼성전자 운영자금-3000억(KRW), 10million( USD)</div>
+                        <div class="act"><a href="#"><img src="../resources/img/icon_pencil_blue.png"><p>Edit</p></a></div>
+                        <div class="tabs">
+                            <ul>
+                                <li class="active">
+                                    <a href="./dealdetail_edit.html">OverView</a>
+                                </li>
+                                <li>
+                                    <a href="./dealdetail_submission_edit.html">Submission</a>
+                                </li>
+                                <li>
+                                    <a href="./dealdetail_working_edit.html">Working group list</a>
+                                </li>
+                                <li>
+                                    <a href="./dealdetail_allocation_edit.html">Allocation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="overview">
+                            <div class="desc">
+                                <div class="tit">
+                                    <div class="name">Files</div>
+                                    <div class="button"><a href="#"><img src="../resources/img/icon_add_button_white.png"><p>Add</p></a></div>
+                                </div>
+                                <div class="con">
+                                    <div class="tbl">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:242px">
+                                                <col style="width:100px">
+                                                <col style="width:160px">
+                                                <col style="width:120px">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="tal">filename</th>
+                                                    <th class="tar">size</th>
+                                                    <th class="tal">update</th>
+                                                    <th class="tal"></th>
+                                                    <th class="tal">Requirements</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tal name">filename2</td>
+                                                    <td class="tar size">0MB</td>
+                                                    <td class="tal date">0000-00-00 00:00</td>
+                                                    <td class="tal button"><a href="#"><img src="../resources/img/icon_update.png"><p>Update</p></a></td>
+                                                    <td class="tal require"><a href="#" class="modalOpen" data-modal="modal-permission"><p>None</p><img src="../resources/img/icon_cog.png"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tal name">filename3</td>
+                                                    <td class="tar size">0MB</td>
+                                                    <td class="tal date">0000-00-00 00:00</td>
+                                                    <td class="tal button"><a href="#"><img src="../resources/img/icon_update.png"><p>Update</p></a></td>
+                                                    <td class="tal require"><a href="#" class="modalOpen" data-modal="modal-permission"><p>NDA, permission</p><img src="../resources/img/icon_cog.png"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="tit">
+                                    <div class="name">Participants</div>
+                                    <div class="button"><a href="#" class="modalOpen" data-modal="modal-invite"><img src="../resources/img/icon_add_button_white.png"><p>Invite</p></a></div>
+                                </div>
+                                <div class="con">
+                                    <div class="tbl">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:180px">
+                                                <col style="width:148px">
+                                                <col style="width:148px">
+                                                <col style="width:148px">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="tal">Bank</th>
+                                                    <th class="tal">NDA</th>
+                                                    <th class="tal">LOI</th>
+                                                    <th class="tal">LOC</th>
+                                                    <th class="tal">Permission in this deal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tal bank"><img src="../resources/img/bank_ibk.png"></td>
+                                                    <td class="tal nda">0000-00-00 <img src="../resources/img/icon_document_checked.png"></td>
+                                                    <td class="tal loi">0000-00-00 <img src="../resources/img/icon_document.png"></td>
+                                                    <td class="tal loc">-</td>
+                                                    <td class="tal pitd"><a href="#" class="modalOpen" data-modal="modal-participants"><p>Deal maker</p><img src="../resources/img/icon_cog.png"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tal bank"><img src="../resources/img/bank_hsbc.png"></td>
+                                                    <td class="tal nda">0000-00-00 <img src="../resources/img/icon_document.png"></td>
+                                                    <td class="tal loi">0000-00-00 <img src="../resources/img/icon_document.png"></td>
+                                                    <td class="tal loc">-</td>
+                                                    <td class="tal pitd"><a href="#" class="modalOpen" data-modal="modal-participants"><p>View restricted file</p><img src="../resources/img/icon_cog.png"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="tit">
+                                    <div class="name">Funding progress</div>
+                                </div>
+                                <div class="con">
+                                    <div class="box">
+                                        <dl>
+                                            <dt>예상(LOI)</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>
+                                                        <div class="tit">
+                                                            <p>tranch A</p>
+                                                            <strong>000억</strong>
+                                                        </div>
+                                                        <div class="bar">
+                                                            <i style="width:40%"></i>
+                                                        </div>
+                                                        <div class="txt">
+                                                            <p>B bank: 000,000,000</p>
+                                                            <p>C bank: 000,000,000</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tit">
+                                                            <p>tranch B</p>
+                                                            <strong>000억</strong>
+                                                        </div>
+                                                        <div class="bar">
+                                                            <i style="width:40%"></i>
+                                                        </div>
+                                                        <div class="txt">
+                                                            <p>B bank: 000,000,000</p>
+                                                            <p>C bank: 000,000,000</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="box">
+                                        <dl>
+                                            <dt>확정(LOC)</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>
+                                                        <div class="tit">
+                                                            <p>tranch A</p>
+                                                            <strong>000억</strong>
+                                                        </div>
+                                                        <div class="bar">
+                                                            <i style="width:40%"></i>
+                                                        </div>
+                                                        <div class="txt">
+                                                            <p>B bank: 000,000,000</p>
+                                                            <p>C bank: 000,000,000</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tit">
+                                                            <p>tranch B</p>
+                                                            <strong>000억</strong>
+                                                        </div>
+                                                        <div class="bar">
+                                                            <i style="width:40%"></i>
+                                                        </div>
+                                                        <div class="txt">
+                                                            <p>B bank: 000,000,000</p>
+                                                            <p>C bank: 000,000,000</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside">
+                    <dl>
+                        <dt>Schedule <a href="#"><img src="../resources/img/icon_cog.png"></a></dt>
+                        <dd>
+                            <p>Launch 0000.00.00</p>
+                            <p style="color:#00BFDA">LOI, NDA제출 ~0000.00.00</p>
+                            <p>LOC 제출 ~0000.00.00</p>
+                            <p>Deal close 0000.00.00</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Contact list <a href="#"><img src="../resources/img/icon_cog.png"></a></dt>
+                        <dd>
+                            <p>KDBank, Jason Lee</p>
+                            <p>02-000-0000</p>
+                            <p>jason@kdb.co.kr</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="skip">close menu</dt>
+                        <dd>
+                            <a href="#" class="btn btn_02 modalOpen" data-modal="modal-dealclose">close this deal</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-container" id="modal-permission">
+        <div class="modal-wrapper">
+            <div class="title">File permission setting</div>
+            <div class="text">참가자들이 {filename}을 조회하기 위해 필요한 조건을 설정합니다.</div>
+            <div class="list">
+                <ul>
+                    <li><label class="radiobox"><input type="radio" name="permission"><i></i><p>None</p></label></li>
+                    <li><label class="radiobox"><input type="radio" name="permission" checked><i></i><p>Need NDA</p></label></li>
+                    <li><label class="radiobox"><input type="radio" name="permission"><i></i><p>Need NDA, Permission</p></label></li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-invite">
+        <div class="modal-wrapper">
+            <div class="title">File permission setting</div>
+            <div class="search">
+                <form class="search-form">
+                    <input type="text" placeholder="search">
+                    <button type="submit"><img src="../resources/img/icon_search.png"></button>
+                </form>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <span>신한은행 박미소 차장</span>
+                            <button type="button"><img src="../resources/img/icon_close.png"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <span>email@email.com</span>
+                            <button type="button"><img src="../resources/img/icon_close.png"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box error">
+                            <img src="../resources/img/icon_error.png">
+                            <span>email@email.</span>
+                            <button type="button"><img src="../resources/img/icon_close_error.png"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01 modalOpen" data-modal="modal-invite-complete">Invite</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-invite-complete">
+        <div class="modal-wrapper">
+            <div class="title">Mail sent</div>
+            <div class="text">초대 메일이 발송되었습니다.</div>
+            <div class="button">
+                <a href="#" class="btn btn_01 modalClose">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-participants">
+        <div class="modal-wrapper">
+            <div class="title">Participants setting</div>
+            <div class="image"><img src="../resources/img/bank_ibk.png"></div>
+            <div class="checklist">
+                <div class="tit">Permission</div>
+                <div class="txt">
+                    <ul>
+                        <li><label class="checkbox"><input type="checkbox"><i></i><p>Can view restricted files</p></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><i></i><p>deal maker</p></label></li>
+                        <li style="padding-left:30px;"><label class="checkbox"><input type="checkbox"><i></i><p>Upload File</p></label></li>
+                        <li style="padding-left:30px;"><label class="checkbox"><input type="checkbox"><i></i><p>Email작성 </p></label></li>
+                        <li style="padding-left:30px;"><label class="checkbox"><input type="checkbox"><i></i><p>WGL관리</p></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_03 modalOpen remove" data-modal="modal-remove">Remove</a>
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01 modalOpen" data-modal="modal-invite-complete">Invite</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-remove">
+        <div class="modal-wrapper">
+            <div class="title">Remove from this deal</div>
+            <div class="text">{item}을 {dealName}에서 삭제하시겠습니까?</div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-dealclose">
+        <div class="modal-wrapper">
+            <div class="title">Close this deal</div>
+            <div class="text">이 딜을 종료하고 리포트를 생성합니다. 종료하면 더이상 수정할 수 없습니다. 첨부파일과 데이터는 보존됩니다. </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <label class="radiobox"><input type="radio" name="dealclose"><i></i><p>Close</p></label>
+                    </li>
+                    <li>
+                        <label class="radiobox"><input type="radio" name="dealclose"><i></i><p>Withdrawn</p></label>
+                        <div class="info">진행도중 중단된 경우, 리포트는 생성되지 않습니다. </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

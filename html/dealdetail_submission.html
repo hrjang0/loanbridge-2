@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="dealdetail">
+            <div class="wrap">
+                <div class="content">
+                    <div class="title">
+                        <div class="tit">삼성전자 운영자금-3000억(KRW), 10million( USD)</div>
+                        <div class="act"><a href="#"><img src="../resources/img/icon_pencil_blue.png"><p>Edit</p></a></div>
+                        <div class="tabs">
+                            <ul>
+                                <li>
+                                    <a href="./dealdetail.html">OverView</a>
+                                </li>
+                                <li class="active">
+                                    <a href="./dealdetail_submission.html">Submission</a>
+                                </li>
+                                <li>
+                                    <a href="./dealdetail_working.html">Working group list</a>
+                                </li>
+                                <li>
+                                    <a href="./dealdetail_allocation.html">Allocation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="submission">
+                            <ul>
+                                <li>
+                                    <div class="desc">
+                                        <div class="tit">
+                                            <div class="name">NDA</div>
+                                        </div>
+                                        <div class="con">
+                                            <div class="box">
+                                                <div class="file">
+                                                    <img src="../resources/img/icon_clip.png"> 
+                                                    <p>attachment.xlsx</p>
+                                                    <span class="confirm">컨펌됨</span>
+                                                </div>
+                                            </div>
+                                            <div class="act">
+                                                <a href="#" class="btn btn_02 modalOpen" data-modal="modal-submission">Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="desc">
+                                        <div class="tit">
+                                            <div class="name">LOI</div>
+                                        </div>
+                                        <div class="con">
+                                            <div class="box">
+                                                <div class="name">100억(KRW), tranch A <br>10억(USD), tranch B </div>
+                                                <div class="file">
+                                                    <img src="../resources/img/icon_clip.png"> 
+                                                    <p>attachment.xlsx</p>
+                                                    <span class="block">거절됨</span>
+                                                </div>
+                                                <div class="error"><img src="../resources/img/icon_error.png"><p>파일을 확인하고 다시 제출 해주세요.</p></div>
+                                            </div>
+                                            <div class="act">
+                                                <a href="#" class="btn btn_02 modalOpen" data-modal="modal-submission">Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <div class="tit">
+                                            <div class="name">LOC</div>
+                                        </div>
+                                        <div class="con">
+                                            <div class="box">
+                                                <div class="text">미제출</div>
+                                            </div>
+                                            <div class="act">
+                                                <a href="#" class="btn btn_01 modalOpen" data-modal="modal-submission"><img src="../resources/img/icon_update_white.png">Upload</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside">
+                    <dl>
+                        <dt>Schedule <a href="#"><img src="../resources/img/icon_cog.png"></a></dt>
+                        <dd>
+                            <p>Launch 0000.00.00</p>
+                            <p style="color:#00BFDA">LOI, NDA제출 ~0000.00.00</p>
+                            <p>LOC 제출 ~0000.00.00</p>
+                            <p>Deal close 0000.00.00</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Contact list <a href="#"><img src="../resources/img/icon_cog.png"></a></dt>
+                        <dd>
+                            <p>KDBank, Jason Lee</p>
+                            <p>02-000-0000</p>
+                            <p>jason@kdb.co.kr</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="skip">close menu</dt>
+                        <dd>
+                            <a href="#" class="btn btn_02 modalOpen" data-modal="modal-dealclose">close this deal</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-container" id="modal-submission">
+        <div class="modal-wrapper">
+            <div class="title">LOC</div>
+            <div class="list">
+                <dl>
+                    <dt>금액</dt>
+                    <dd>
+                        <p>Tranch A (KRW)</p>
+                        <input type="text">
+                    </dd>
+                    <dd>
+                        <p>Tranch B (USD)</p>
+                        <input type="text">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Attachment</dt>
+                    <dd>
+                        <label class="attach"><input type="file"><img src="../resources/img/icon_update_white.png"><p>Upload</p></label>
+                    </dd>
+                    <dd>
+                        <span class="files">
+                            <p>attachment.xlsx</p>
+                            <button type="button"><img src="../resources/img/icon_close.png">
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-dealclose">
+        <div class="modal-wrapper">
+            <div class="title">Close this deal</div>
+            <div class="text">이 딜을 종료하고 리포트를 생성합니다. 종료하면 더이상 수정할 수 없습니다. 첨부파일과 데이터는 보존됩니다. </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <label class="radiobox"><input type="radio" name="dealclose"><i></i><p>Close</p></label>
+                    </li>
+                    <li>
+                        <label class="radiobox"><input type="radio" name="dealclose"><i></i><p>Withdrawn</p></label>
+                        <div class="info">진행도중 중단된 경우, 리포트는 생성되지 않습니다. </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

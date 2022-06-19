@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="myprofile">
+            <div class="title">
+                <div class="wrap">
+                    <div class="tit">My profile</div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="wrap">
+                    <div class="box">
+                        <div class="head">
+                            <div class="name">Tomas Lee</div>
+                            <div class="mail">tomas@abank.com</div>
+                            <div class="bank"><img src="../resources/img/bank_ibk.png"></div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>부서</dt>
+                                <dd>{부서이름}</dd>
+                            </dl>
+                            <dl>
+                                <dt>직책</dt>
+                                <dd>{직책}</dd>
+                            </dl>
+                            <dl>
+                                <dt>전화번호</dt>
+                                <dd>00-000-0000</dd>
+                            </dl>
+                            <dl>
+                                <dt>FAX</dt>
+                                <dd>00-000-0000</dd>
+                            </dl>
+                        </div>
+                        <!-- other 일때 display:block 처리 -->
+                        <div class="history">
+                            <div class="tit">Deal history</div>
+                            <div class="table">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col style="width:120px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="tal">Title</th>
+                                            <th class="tal">Closing</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tal">삼성전자 운영자금</td>
+                                            <td class="tal">0000-00-00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">Title</td>
+                                            <td class="tal">0000-00-00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">Title</td>
+                                            <td class="tal">0000-00-00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //other 일때 display:block 처리 -->
+                        <!-- other 일때 display:none 처리 -->
+                        <div class="option">
+                            <div class="open">
+                                <span>프로필 공개</span>
+                                <label class="toggle"><input type="checkbox" checked=""><div><i></i></div></label>
+                            </div>
+                            <div class="edit">
+                                <a href="#" class="btn btn_02 modalOpen" data-modal="modal-profile-edit"><img src="../resources/img/icon_pencil_blue.png"> Edit</a>
+                            </div>
+                        </div>
+                        <!-- //other 일때 display:none 처리 -->
+                    </div>
+                    <!-- other 일때 display:none 처리 -->
+                    <div class="change">
+                        <a href="#" class="modalOpen" data-modal="modal-profile-change">비밀번호 변경</a>
+                    </div>
+                    <!-- //other 일때 display:none 처리 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-container" id="modal-profile-edit">
+        <div class="modal-wrapper">
+            <div class="title">Update profile</div>
+            <div class="form">
+                <dl>
+                    <dt>이름</dt>
+                    <dd><input type="text" value="Tomas Lee"></dd>
+                </dl>
+                <dl>
+                    <dt>부서</dt>
+                    <dd><input type="text" value="{부서이름}"></dd>
+                </dl>
+                <dl>
+                    <dt>직책</dt>
+                    <dd><input type="text" value="{직책}"></dd>
+                </dl>
+                <dl>
+                    <dt>전화번호</dt>
+                    <dd><input type="text" value="00-000-0000"></dd>
+                </dl>
+                <dl>
+                    <dt>FAX</dt>
+                    <dd><input type="text" value="00-000-0000"></dd>
+                </dl>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">Save</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-profile-change">
+        <div class="modal-wrapper">
+            <div class="title">Change passwoard</div>
+            <div class="form">
+                <dl>
+                    <dt>비밀번호</dt>
+                    <dd><input type="password"></dd>
+                </dl>
+                <dl>
+                    <dt>비밀번호 확인</dt>
+                    <dd><input type="password"></dd>
+                </dl>
+                <div class="error">
+                    <img src="../resources/img/icon_error.png"><p>비밀번호가 일치하지 않습니다. </p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">Save</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

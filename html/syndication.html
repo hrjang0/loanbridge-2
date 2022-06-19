@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="syndication">
+            <div class="title">
+                <div class="wrap">
+                    <div class="tit">Syndication contact list</div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="wrap">
+                    <div class="head">
+                        <div class="search">
+                            <div class="form">
+                                <input type="text" placeholder="Search..">
+                                <button type="submit"><img src="../resources/img/icon_search.png"></button>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="./addnewdeal.html"><img src="../resources/img/icon_export_white.png"><p>Export</p></a>
+                            <a href="javascript:;" class="disabled modalOpen" data-modal="modal-remove"><img src="../resources/img/icon_remove_white.png"><p>Remove from list</p></a>
+                        </div>
+                    </div>
+                    <div class="list table">
+                        <table>
+                            <colgroup>
+                                <col style="width:40px">
+                                <col style="width:96px">
+                                <col style="width:140px">
+                                <col style="width:120px">
+                                <col style="width:120px">
+                                <col style="width:120px">
+                                <col style="width:120px">
+                                <col style="width:140px">
+                                <col style="width:120px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="tac"><label class="checkbox"><input type="checkbox" id="allchk"><i></i><p class="skip">전체 선택</p></label></th>
+                                    <th class="tal">Bank</th>
+                                    <th class="tal">Name</th>
+                                    <th class="tal">업무범위</th>
+                                    <th class="tal">부서</th>
+                                    <th class="tal">직책</th>
+                                    <th class="tal">전화번호</th>
+                                    <th class="tal">FAX</th>
+                                    <th class="tal">email</th>
+                                    <th class="tal">last updated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox" name="syndication"><i></i><p class="skip">리스트 선택</p></label></td>
+                                    <td class="tal"><img src="../resources/img/bank_ibk.png"></td>
+                                    <td class="tal fs16 text-violet"><a href="#">Jean Lee</a></td>
+                                    <td class="tal fs16">credit</td>
+                                    <td class="tal fs16">text</td>
+                                    <td class="tal fs16">text</td>
+                                    <td class="tal fs16">00-000-0000</td>
+                                    <td class="tal fs16">00-000-0000</td>
+                                    <td class="tal fs16">email@email.com</td>
+                                    <td class="tal fs16">0000-00-00 <br>00:00</td>
+                                </tr>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox" name="syndication"><i></i><p class="skip">리스트 선택</p></label></td>
+                                    <td class="tal"><img src="../resources/img/bank_hsbc.png"></td>
+                                    <td class="tal fs16 text-violet"><a href="#">hongjae kim</a></td>
+                                    <td class="tal fs16">credit</td>
+                                    <td class="tal fs16">text</td>
+                                    <td class="tal fs16">text</td>
+                                    <td class="tal fs16">00-000-0000</td>
+                                    <td class="tal fs16">00-000-0000</td>
+                                    <td class="tal fs16">email@email.com</td>
+                                    <td class="tal fs16">0000-00-00 <br>00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <script type="text/javascript">
+                        $(function(){
+                            $("#allchk").on('change',function(){
+                                if($("#allchk").prop("checked")) {
+                                    $('input[name="syndication"]').prop("checked",true);
+                                } else { 
+                                    $('input[type="syndication"]').prop("checked",false);
+                                }
+                            });
+                            $('input[name="syndication"]').on('change',function(){
+                                var length = $('input[name="syndication"]:checked').length,
+                                    total = $('input[name="syndication"]').length;
+                                if(length == total) {
+                                    $('#allchk').prop('checked',true);
+                                } else {
+                                    $('#allchk').prop('checked',false);
+                                }
+                            });
+                        })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-container" id="modal-remove">
+        <div class="modal-wrapper">
+            <div class="title">Remove from contact list</div>
+            <div class="text">{#}명을 목록에서 삭제하시겠습니까? </div>
+            <div class="button">
+                <a href="#" class="btn btn_02 modalClose">Cancel</a>
+                <a href="#" class="btn btn_01">OK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

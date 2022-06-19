@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+</head>
+<body id="wrap">
+	<header id="header">
+        <div class="wrap">
+            <div class="logo"><a href="../../workspace/LoanBridge-Front/src/assets/css/index.html"><img src="../resources/img/logo.png" alt="checkin"></a></div>
+            <div class="menu">
+                <a href="./explore.html">Explore</a>
+                <a href="#">Deal pricing</a>
+                <a href="#">Template</a>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <a href="#">UserName</a>
+                    <ul>
+                        <li><a href="./mydeal.html"><p>My deal</p></a></li>
+                        <li><a href="./myprofile.html"><p>My profile</p></a></li>
+                        <li><a href="./contactlist.html"><p>Contact list</p></a></li>
+                        <li><a href="#"><img src ="../resources/img/icon_logout.png"><p>Log Out</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner"><img src="../resources/img/bank_ibk.png"></div>
+        </div>
+    </header>
+	<section id="container">
+        <div id="closedeal">
+            <div class="wrap">
+                <div class="cont">
+                    <div class="head">
+                        <div class="title">삼성전자 운영자금 <br>3000억(KRW), 300억(USD)</div>
+                        <div class="type">Deal type: Public</div>
+                    </div>
+                    <div class="date">
+                        <ul>
+                            <li>
+                                <div class="tit">약정일</div>
+                                <div class="inp"><input type="text" class="datepicker" placeholder="0000-00-00"></div>
+                            </li>
+                            <li>
+                                <div class="tit">최초인출일</div>
+                                <div class="inp"><input type="text" class="datepicker" placeholder="0000-00-00"></div>
+                            </li>
+                            <li>
+                                <div class="tit">내부승인일</div>
+                                <div class="inp"><input type="text" class="datepicker" placeholder="0000-00-00"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <dl>
+                            <dt>차주사 등 정보</dt>
+                            <dd>
+                                <div class="table">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col style="width:20%">
+                                            <col style="width:20%">
+                                            <col style="width:20%">
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="tal">구분</th>
+                                                <th class="tal">명칭</th>
+                                                <th class="tal">기업규모</th>
+                                                <th class="tal">업중</th>
+                                                <th class="tal">내부신용등급</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="tal">차주사</th>
+                                                <td class="tal"><span>삼성전자</span></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><span>Text</span></td>
+                                                <td class="tal"><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tal">보증사</th>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tal">스폰서</th>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tal">대상회사</th>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                                <td class="tal"><input type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>주요 금융조건</dt>
+                            <dd>
+                                <div class="option">
+                                    <dl>
+                                        <dt>대출 목적1</dt>
+                                        <dd><input type="text" value="운영자금" readonly></dd>
+                                        <dt>총 수수료율(%)</dt>
+                                        <dd><input type="text" placeholder="%"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>대출 목적2</dt>
+                                        <dd>
+                                            <select>
+                                                <option>신규</option>
+                                                <option>리파이낸싱</option>
+                                                <option>조건변경</option>
+                                                <option>신규+리파이낸싱</option>
+                                                <option>기타(직접입력)</option>
+                                            </select>
+                                        </dd>
+                                        <dt>주선 수수료율(%)</dt>
+                                        <dd><input type="text" placeholder="%"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>담보목적물</dt>
+                                        <dd><input type="text"></dd>
+                                        <dt>참여 수수료율(%)</dt>
+                                        <dd><input type="text" placeholder="%"></dd>
+                                    </dl>
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:40px">
+                                            <col style="width:70px">
+                                            <col style="width:120px">
+                                            <col style="width:156px">
+                                            <col style="width:88px">
+                                            <col style="width:80px">
+                                            <col style="width:110px">
+                                            <col style="width:110px">
+                                            <col style="width:170px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="tal">Tr.</th>
+                                                <th class="tal">통화</th>
+                                                <th class="tal">금액</th>
+                                                <th class="tal">대출형태</th>
+                                                <th class="tal">만기(년)</th>
+                                                <th class="tal">금리</th>
+                                                <th class="tal">기준금리(%)</th>
+                                                <th class="tal">가산금리(%)</th>
+                                                <th class="tal">상환방식</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="tal">A</th>
+                                                <td class="tal"><span>KRW</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                                <td class="tal"><span>Term Loan</span></td>
+                                                <td class="tal"><span>3</span></td>
+                                                <td class="tal"><span>고정</span></td>
+                                                <td class="tal"><input type="text" placeholder="%"></td>
+                                                <td class="tal"><input type="text" placeholder="%"></td>
+                                                <td class="tal"><select><option>만기일시상환</option></select></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tal">B</th>
+                                                <td class="tal"><span>USD</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                                <td class="tal"><span>Term Loan</span></td>
+                                                <td class="tal"><span>3</span></td>
+                                                <td class="tal"><span>고정</span></td>
+                                                <td class="tal"><input type="text" placeholder="%"></td>
+                                                <td class="tal"><input type="text" placeholder="%"></td>
+                                                <td class="tal"><select><option>분할상환</option></select></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>배당 정보</dt>
+                            <dd>
+                                <div class="table">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:200px">
+                                            <col>
+                                            <col style="width:200px">
+                                            <col style="width:200px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="tal">참여기관명</th>
+                                                <th class="tal">지위</th>
+                                                <th class="tal">Allocation- Tr.A</th>
+                                                <th class="tal">Allocation- Tr.B</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="tal">A Bank</th>
+                                                <td class="tal"><span>TEXT</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="tal">B Bank</th>
+                                                <td class="tal"><span>TEXT</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                                <td class="tar"><span>123</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>주요 약정사항</dt>
+                            <dd>
+                                <div class="option">
+                                    <dl>
+                                        <dt style="width:160px">주요 적극적 준수사항</dt>
+                                        <dd><input type="text"></dd>
+                                        <dt>Legal Counsel</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt style="width:160px">주요 소극적 준수사항</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt style="width:160px">재무약정</dt>
+                                        <dd><input type="text"></dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>주요 약정사항</dt>
+                            <dd>
+                                <div class="text">
+                                    <textarea></textarea>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="period">
+                        <dl>
+                            <dt>파일 조회 가능 기간</dt>
+                            <dd>
+                                <select>
+                                    <option>1개월</option>
+                                    <option>3개월</option>
+                                    <option>6개월</option>
+                                    <option>12개월</option>
+                                    <option>24개월</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <p>참가자들에게만 적용되며, deal maker는 기간 제한 없이 조회할 수 있습니다. </p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn_02">Cancel</a>
+                        <a href="#" class="btn btn_01">Save</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
